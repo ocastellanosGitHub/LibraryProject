@@ -1,0 +1,8 @@
+export type Book = {
+  id: string;
+  title: string;
+  author: string;
+  isbn: string;
+};
+
+export type BookInput = Omit<Book, "id">;
